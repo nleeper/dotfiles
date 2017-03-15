@@ -54,7 +54,7 @@ DEFAULT_USER="nleeper"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-aliases osx docker encode64 httpie npm)
+plugins=(git git-aliases osx docker encode64 httpie npm history-substring-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -86,3 +86,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+bindkey "^[[A" history-substring-search-up
+bindkey "^[[B" history-substring-search-down
