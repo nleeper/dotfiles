@@ -1,5 +1,15 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/bin:/usr/local/bin:/usr/local/mysql/bin:$PATH
+
+export NODE_ENV=development
+
+# export DOCKER_HOST=tcp://127.0.0.1:4243
+# export HOST_IP=10.211.55.6
+
+export CLEDG_DATABASE_URI=postgres://central_ledger:cVq8iFqaLuHy8jjKuA@localhost:5432/central_ledger
+export CDIR_DATABASE_URI=postgres://central_directory:cVq8iFqaLuHy8jjKuA@localhost:5432/central_directory
+export CREG_DATABASE_URI=postgres://central_end_user_registry:cVq8iFqaLuHy8jjKuA@localhost:5432/central_end_user_registry
+#export PASS_DATABASE_URI=postgres://dwolla_passport:wZqczRXzQq9mm9rrTz@localhost:5432/dwolla_passport
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/nleeper/.oh-my-zsh
@@ -86,6 +96,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias fu-dns='sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder;'
 
 bindkey "^[[A" history-substring-search-up
 bindkey "^[[B" history-substring-search-down
